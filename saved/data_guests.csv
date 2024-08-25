@@ -1,0 +1,108 @@
+name,type,table,announcement,here_cocktail,here_diner,here_sunday,special_diet,menu_diner,time_confirmation,type_guest
+Antoine,Adulte,1,NA,Non,Oui,Non,NA,Menu adulte,2022-08-04 14:50:21,NA
+Marie-Dominique,Adulte,1,NA,Oui,Oui,Oui,Bois beaucoup mais un verre à la fois,Menu adulte,2022-09-19 11:37:50,NA
+Marie-Charlotte,Adulte,1,NA,Oui,Oui,Oui,NA,Menu adulte,2022-12-12 05:21:32,NA
+Baptiste,Adulte,1,NA,Oui,Oui,Oui,NA,Menu adulte,2022-12-17 10:54:05,NA
+Anaïs,Adulte,1,NA,Oui,Oui,Oui,NA,Menu adulte,2023-02-22 18:08:54,NA
+David,Adulte,1,NA,Oui,Oui,Non,NA,Menu adulte,2023-08-27 18:55:02,NA
+Maxence,Adulte,1,Yes,Non,Oui,Non,NA,Menu adulte,2023-10-24 08:18:14,NA
+Corentin,Adulte,1,NA,Oui,Oui,Oui,NA,Menu adulte,2023-11-24 16:36:01,NA
+Margot,Adulte,1,Yes,Oui,NA,NA,NA,Menu adulte,2023-12-17 23:28:48,NA
+Michèle,Adulte,1,NA,Oui,Oui,Oui,NA,Menu adulte,2024-01-25 16:25:44,NA
+Marie R.,Adulte,1,NA,Oui,Non,Oui,non,NA,2024-04-15 20:00:22,NA
+Yohan,Adulte,1,NA,Non,Oui,Non,non,Menu adulte,2024-04-15 20:01:21,NA
+Elodie,Adulte,1,Yes,Oui,Non,Non,NA,NA,2024-07-25 17:01:06,NA
+Cécile,Adulte,1,Yes,Non,Non,Oui,lactose,NA,2024-08-25 19:23:57.400054,NA
+Sébastien,Adulte,2,Yes,NA,NA,NA,NA,NA,NA,NA
+Marion,Adulte,2,NA,NA,NA,NA,NA,NA,NA,NA
+Colin,Adulte,2,NA,NA,NA,NA,NA,NA,NA,NA
+Simone,Adulte,2,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-04 21:33:50,NA
+Florence,Adulte,2,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:37:52,NA
+Charlotte,Adulte,2,NA,Oui,Non,Oui,Végatarien,NA,2022-04-22 15:13:42,NA
+Josselin,Adulte,2,Yes,Oui,Oui,Oui,Lelele,Menu adulte,2023-01-15 18:56:14,NA
+Laetitia,Adulte,2,Yes,Oui,Oui,Oui,NA,Menu adulte,2023-09-30 17:16:25,NA
+Carole,Adulte,2,Yes,Oui,Oui,Non,Test,Menu adulte,2023-09-30 17:16:46,NA
+Sophie,Adulte,2,NA,Non,Non,Non,NA,NA,2023-12-04 22:53:51,NA
+Zoé,Adulte,2,Yes,Oui,Oui,Oui,NA,Menu adulte,2024-05-16 10:28:14,NA
+Camille,Adulte,3,Yes,NA,NA,NA,NA,NA,NA,NA
+Roger,Adulte,3,NA,NA,NA,NA,NA,NA,NA,NA
+Emmanuel,Adulte,3,Yes,NA,NA,NA,NA,NA,NA,NA
+Colette,Adulte,3,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:38:58,NA
+Alban,Adulte,3,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:39:04,NA
+Josette,Adulte,3,Yes,Non,Oui,Non,mange des limaces,Menu adulte,2022-09-19 11:37:28,NA
+Johnny,Adulte,3,NA,Oui,Non,Non,NA,NA,2023-09-30 17:17:14,NA
+Emilie,Adulte,4,Yes,NA,NA,NA,NA,Menu adulte,NA,NA
+Claudette,Adulte,4,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-14 11:02:27,NA
+Charlyne,Adulte,4,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-24 19:23:05,NA
+Véronique,Adulte,4,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-24 19:22:21,NA
+Mariette,Adulte,4,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-26 16:29:32,NA
+Romy,Adulte,4,Yes,Oui,Oui,Non,NA,Menu adulte,2021-05-30 20:39:23,NA
+Sylvie,Adulte,4,NA,Oui,Oui,Non,NA,Menu adulte,2021-05-30 20:39:15,NA
+Ophélie,Adulte,4,NA,Oui,Oui,Oui,NA,Menu adulte,2022-04-27 15:04:10,NA
+Charlie,Adulte,4,NA,Oui,Oui,Oui,NA,Menu adulte,2022-08-06 15:31:57,NA
+Larousso,Adulte,4,NA,Oui,NA,NA,NA,Menu adulte,2023-10-24 08:18:24,NA
+Odile,Adulte,5,NA,NA,NA,NA,NA,NA,NA,NA
+Géraldine,Adulte,5,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-08 19:47:45,NA
+Christelle,Adulte,5,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-08 19:47:25,NA
+Marion,Adulte,5,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-24 21:59:14,NA
+Emma,Adulte,5,Yes,Oui,Non,NA,NA,NA,2022-07-15 20:30:28,NA
+Marcel,Adulte,5,Yes,Oui,Oui,Oui,jn,Menu adulte,2024-07-20 03:35:14,NA
+Gaëlle,Adulte,6,Yes,NA,NA,NA,NA,NA,NA,NA
+Alexandra,Adulte,6,NA,NA,NA,NA,NA,NA,NA,NA
+Maeva,Adulte,6,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-23 18:14:44,NA
+Arthur,Adulte,6,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:40:40,NA
+Napoléon,Adulte,6,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:40:50,NA
+Cassandra,Adulte,6,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:41:04,NA
+Cassandre,Adulte,6,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:40:56,NA
+Paulette,Adulte,6,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-06-09 10:27:54,NA
+Gisèle,Adulte,6,NA,Oui,Oui,Oui,NA,Menu adulte,2021-06-09 10:28:08,NA
+Antoine,Adulte,6,NA,Non,Oui,Non,NA,Menu adulte,2022-08-04 14:50:21,NA
+Constance,Adulte,7,Yes,Oui,Oui,Oui,Femme enceinte,Menu adulte,2021-05-22 21:44:44,NA
+Jean,Adulte,7,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-22 21:45:05,NA
+Hortense,Adulte,7,Yes,Oui,Oui,Oui,Végétarien,Menu adulte,2021-05-24 19:35:45,NA
+Rose,Adulte,7,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:47:50,NA
+Pierre,Adulte,7,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:48:19,NA
+Marin,Adulte,7,NA,Non,Non,Non,NA,NA,2021-05-30 20:48:26,NA
+Martin,Adulte,7,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-06-09 10:34:45,NA
+Nayo,Adulte,7,NA,Oui,Oui,Oui,NA,Menu adulte,2021-06-09 10:33:50,NA
+Andy,Adulte,7,NA,NA,NA,NA,NA,Menu adulte,2023-03-21 19:59:06,NA
+Adèle,Adulte,7,NA,Non,Oui,Non,NA,Menu adulte,2024-01-25 16:25:59,NA
+Valérie,Adulte,8,Yes,NA,NA,NA,NA,NA,NA,NA
+Aurélie,Adulte,8,NA,NA,NA,NA,NA,NA,NA,NA
+Natacha,Adulte,8,Yes,Oui,Oui,Non,NA,Menu adulte,2021-05-06 15:28:14,NA
+Aurore,Adulte,8,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-12 22:19:45,NA
+Florian,Adulte,8,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-12 22:20:07,NA
+Pierre,Adulte,8,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-13 15:37:38,NA
+Manon,Adulte,8,Yes,Oui,Oui,Non,NA,Menu adulte,2021-05-17 08:34:28,NA
+Marceline,Adulte,8,NA,Oui,Oui,Non,NA,Menu adulte,2021-05-17 08:36:54,NA
+Hélène,Adulte,8,Yes,Oui,Oui,Oui,Allergie cacahuètes,Menu adulte,2021-06-02 11:29:34,NA
+Jean-Pascale,Adulte,8,NA,Oui,Oui,Oui,NA,Menu adulte,2021-06-02 11:30:04,NA
+Simon,Adulte,8,NA,Oui,Non,NA,NA,NA,2024-08-03 14:16:48,NA
+Quentin,Adulte,9,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-26 17:03:31,NA
+Aurore,Adulte,9,NA,Oui,Oui,Oui,"intolérance cacahuètes / amandes / noisettes (noix ok, nutella ok, pistaches ok)",Menu adulte,2021-05-26 17:05:06,NA
+Cerise,Adulte,9,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:46:50,NA
+Céline,Adulte,9,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:46:58,NA
+Valentin,Adulte,9,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 21:01:00,NA
+Capucine,Adulte,9,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 21:00:53,NA
+Paquerette,Adulte,9,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 21:03:54,NA
+Nadège,Adulte,9,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 21:03:48,NA
+Pauline,Adulte,9,NA,NA,NA,NA,NA,NA,NA,NA
+Violette,Adulte,9,NA,NA,NA,NA,NA,NA,NA,NA
+Nicolas,Adulte,9,NA,NA,NA,NA,NA,NA,NA,NA
+Arthur,Adulte,10,Yes,NA,NA,NA,NA,NA,NA,NA
+Josiane,Adulte,10,NA,NA,NA,NA,NA,NA,NA,NA
+Cervan,Adulte,10,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-04 21:24:46,NA
+Diane,Adulte,10,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-05 16:27:58,NA
+Vincent,Adulte,10,Yes,Oui,Oui,Oui,NA,Menu adulte,2021-05-05 16:28:07,NA
+Estelle,Adulte,10,Yes,Non,Oui,Oui,NA,Menu adulte,2022-03-18 10:13:19,NA
+Thibaut,Ado,11,NA,Oui,Oui,Oui,Intolérance au lactose,Menu enfant,2021-05-08 19:48:19,NA
+Cameron,Ado,11,NA,Oui,Oui,Oui,"Intolérance au lactose, aux tomates, aux carottes, aux concombres, au pamplemousse , aux fruits à noyaux",Menu enfant,2021-05-08 19:49:25,NA
+Anna,Ado,11,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-08 21:03:31,NA
+Louisa,Ado,11,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-08 21:03:52,NA
+Emile,Ado,11,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-24 19:24:00,NA
+Malo,Ado,11,NA,Oui,Oui,Oui,NA,Menu adulte,2021-05-30 20:47:18,NA
+Gaston,Ado,11,NA,Oui,Oui,Oui,NA,Menu adulte,2023-07-17 11:44:55,NA
+Eva,Ado,11,NA,Oui,Oui,Non,NA,Menu adulte,2024-01-09 20:21:17,NA
+Mathis,Enfant,12,NA,NA,NA,NA,NA,NA,NA,NA
+Isaure,Enfant,12,NA,Oui,Oui,Oui,NA,Menu enfant,2021-04-22 09:28:40,NA
+Angèle,Enfant,12,NA,Oui,Oui,Oui,No,Menu enfant,2022-05-14 18:27:25,NA

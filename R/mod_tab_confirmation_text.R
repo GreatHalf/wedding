@@ -318,13 +318,13 @@ mod_tab_confirmation_text_server <- function(id, r_global){
                        type = "default")
       
       # Upload the new database
-      temp_dir <- tempdir()
-      readr::write_csv(r_global$data_guests, glue::glue(temp_dir, "/new_data_guests.csv"))
-      if (Sys.getenv("USE_PREFILLED_DATA_GUEST") == "no") {
-        googledrive::drive_update("data_guests_not_pre_filled", glue::glue(temp_dir, "/new_data_guests.csv"))
-      } else {
-        googledrive::drive_update("data_guests", glue::glue(temp_dir, "/new_data_guests.csv"))
-      }
+      temp_dir <- "saved/" 
+      readr::write_csv(r_global$data_guests, glue::glue(temp_dir, "/data_guests.csv"))
+      # if (Sys.getenv("USE_PREFILLED_DATA_GUEST") == "no") {
+      #   googledrive::drive_update("data_guests_not_pre_filled", glue::glue(temp_dir, "/new_data_guests.csv"))
+      # } else {
+      #   googledrive::drive_update("data_guests", glue::glue(temp_dir, "/new_data_guests.csv"))
+      # }
       
     })
     

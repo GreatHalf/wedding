@@ -1,0 +1,17 @@
+object,real_projected,paid_pending,description,society,paymaster,amount
+Salle,Real,Paid,Acompte,Le chateau des pins,Margot,400
+Traiteur,Real,Paid,Acompte,A table,Margot,700
+Salle,Real,Pending,Solde,Le chateau des pins,,1500
+Traiteur,Real,Pending,Solde,A table,,4500
+DJ,Real,Paid,Acompte,DJ snake,Margot,400
+DJ,Real,Pending,Solde,DJ snake,,1400
+Boissons,Projected,,,,,1000
+Faire-parts,Real,Paid,Papeterie,La papeterie du coin,Margot,100
+Photographe,Projected,,,,,1000
+Fleurs,Projected,,,,,500
+Décoration,Projected,,,,,200
+Nounous,Projected,,,,,200
+Huîtres,Projected,,,,,200
+Robe,Real,Paid,,La créatrice de Rennes,Margot,1000
+Costume,Real,Paid,,Le tailleur de Rennes,David,700
+Alliances,Real,Paid,,Le joaillier trop bien,Margot,600

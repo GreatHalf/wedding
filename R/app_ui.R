@@ -14,12 +14,12 @@ app_ui <- function(request) {
     navbarPage(title = NULL,
                
                tabPanel(
-                 title = "Accueil",
+                 title = "Willkommen",
                  mod_tab_couple_ui("tab_couple_ui_1")
                ),
                
                tabPanel(
-                 title = "Confirmer ma venue", 
+                 title = "Anmeldung", 
                  if (Sys.getenv("USE_PREFILLED_DATA_GUEST") == "no") {
                    mod_tab_confirmation_text_ui("tab_confirmation_ui_1") # if you want to let your guests writte their name
                  } else {
@@ -28,7 +28,7 @@ app_ui <- function(request) {
                ),
                
                tabPanel(
-                 title = "Programme de la journ\u00e9e",
+                 title = "Tagesprogramm",
                  mod_tab_schedule_ui("tab_schedule_ui_1")
                ),
                

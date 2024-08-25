@@ -29,20 +29,20 @@ app_server <- function( input, output, session ) {
   r_global <- reactiveValues()
     
   # Data on google drive
-  googledrive::drive_auth(cache = ".secrets", 
-                          email =  "magnus.halbe@web.de") # Sys.getenv("GOOGLE_MAIL"))
+  # googledrive::drive_auth(cache = ".secrets", 
+  #                         email =  "magnus.halbe@web.de") # Sys.getenv("GOOGLE_MAIL"))
   
-  temp_dir <- tempdir()
+  temp_dir <- "saved/"
   
-  googledrive::drive_download("data_expenses", path = file.path(temp_dir, "data_expenses.csv"), overwrite = TRUE) 
+  # googledrive::drive_download("data_expenses", path = file.path(temp_dir, "data_expenses.csv"), overwrite = TRUE) 
   data_expenses <- read_csv(file.path(temp_dir, "data_expenses.csv"), locale = locale(decimal_mark = ","))
   r_global$data_expenses <- data_expenses
   
-  if (Sys.getenv("USE_PREFILLED_DATA_GUEST") == "no") {
-    googledrive::drive_download("data_guests_not_pre_filled", path = file.path(temp_dir, "data_guests.csv"), overwrite = TRUE) # if you want to let your guests writte their name
-  } else {
-    googledrive::drive_download("data_guests", path = file.path(temp_dir, "data_guests.csv"), overwrite = TRUE) # if you want to let your guests writte their name
-  }
+  # if (Sys.getenv("USE_PREFILLED_DATA_GUEST") == "no") {
+  #   googledrive::drive_download("data_guests_not_pre_filled", path = file.path(temp_dir, "data_guests.csv"), overwrite = TRUE) # if you want to let your guests writte their name
+  # } else {
+  #   googledrive::drive_download("data_guests", path = file.path(temp_dir, "data_guests.csv"), overwrite = TRUE) # if you want to let your guests writte their name
+  # }
   data_guests <- read_csv(file.path(temp_dir, "/data_guests.csv"), 
                           locale = locale(decimal_mark = ","),
                           col_types = cols(table = col_integer(),

@@ -329,9 +329,9 @@ mod_tab_confirmation_server <- function(id, r_global){
                        type = "default")
       
       # Upload the new database
-      temp_dir <- tempdir()
-      readr::write_csv(r_global$data_guests, glue::glue(temp_dir, "/new_data_guests.csv"))
-      googledrive::drive_update("data_guests", glue::glue(temp_dir, "/new_data_guests.csv"))
+      temp_dir <- "saved/"
+      readr::write_csv(r_global$data_guests, glue::glue(temp_dir, "/data_guests.csv"))
+      # googledrive::drive_update("data_guests", glue::glue(temp_dir, "/new_data_guests.csv"))
       
     })
     

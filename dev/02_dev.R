@@ -79,11 +79,11 @@ usethis::use_build_ignore("README.Rmd")
 usethis::use_build_ignore("dev/")
 
 ## Configure auth to googledrive ----
-options(gargle_oauth_cache = ".secrets")
-usethis::use_git_ignore(".secrets")
-options(gargle_quiet = FALSE)
-googledrive::drive_auth(cache = ".secrets", 
-                        email = Sys.getenv("GOOGLE_MAIL"))
+# options(gargle_oauth_cache = ".secrets")
+# usethis::use_git_ignore(".secrets")
+# options(gargle_quiet = FALSE)
+# googledrive::drive_auth(cache = ".secrets", 
+#                         email = Sys.getenv("GOOGLE_MAIL"))
 
 
 ## GitHub Actions ----
