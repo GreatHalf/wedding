@@ -34,40 +34,38 @@ mod_tab_confirmation_ui <- function(id){
         
         selectInput(
           inputId = ns("name"),
-          label = "Pr\u00e9nom",
-          choices = c("Choisir dans la liste la personne", letters),
-          selected = "Choisir dans la liste la personne"
+          label = "Vorname",
+          choices = c("Wähle von der Liste", letters),
+          selected = "Wähle von der Liste"
         ),
 
         tags$br(style = "line-height: 20px"),
-        
-        tags$p("Pr\u00e9sence aux diff\u00e9rents moments du mariage", style = "font-size:15px; letter-spacing:3px; font-weight: bold; color: black"),
          
         fluidRow(
+          # column(
+          #   width = 12,
+          #   selectInput(
+          #     inputId = ns("here_cocktail"),
+          #     label = "Vin d\'honneur",
+          #     choices = c("", "Ja", "Nein"),
+          #     selected = ""
+          #   )
+          # ),
           column(
-            width = 4,
-            selectInput(
-              inputId = ns("here_cocktail"),
-              label = "Vin d\'honneur",
-              choices = c("", "Oui", "Non"),
-              selected = ""
-            )
-          ),
-          column(
-            width = 4,
+            width = 12,
             selectInput(
               inputId = ns("here_diner"),
-              label = "D\u00eener",
-              choices = c("", "Oui", "Non"),
+              label = "Übernachtung im Campotel (die Buchung nimmt jeder Gast selbst vor)",
+              choices = c("", "Ja", "Nein"),
               selected = ""
             )
           ),
           column(
-            width = 4,
+            width = 12,
             selectInput(
               inputId = ns("here_sunday"),
-              label = "Retour",
-              choices = c("", "Oui", "Non"),
+              label = "Frühstück (bei Übernachtung im Campotel)",
+              choices = c("", "Ja", "Nein"),
               selected = ""
             )
           )
@@ -77,8 +75,8 @@ mod_tab_confirmation_ui <- function(id){
         
         textInput(
           inputId = ns("special_diet"),
-          label = "R\u00e9gime alimentaire particulier (allergies/intol\u00e9rances alimentaires, r\u00e9gime femme enceinte, etc.)",
-          placeholder = "Indiquer ici les r\u00e9gimes"
+          label = "Kommentar",
+          placeholder = "Kommentar"
         ),
         
         uiOutput(ns("show_input_teens_menu")),
@@ -89,12 +87,12 @@ mod_tab_confirmation_ui <- function(id){
         
         actionButton(
           inputId = ns("save_info_guest"),
-          label = "Enregistrer mes choix pour cette personne *"
+          label = "Auswahl für diese Person speichern *"
         ),
         
         tags$br(style = "line-height: 20px"),
         
-        tags$p("* Vous pourrez r\u00e9aliser de nouveau l\'op\u00e9ration pour ajouter une nouvelle personne", style = "font-size:15px; letter-spacing:3px; color: black"),
+        tags$p("* Vorgang bitte erneut ausführen, um eine weitere Person hinzuzufügen", style = "font-size:15px; letter-spacing:3px; color: black"),
         
       ),
       
@@ -102,7 +100,7 @@ mod_tab_confirmation_ui <- function(id){
         
         width = 7,
         
-        h1("R\u00e9capitulatif de vos informations", style = "font-size:20px"),
+        h1("Zusammenfassung", style = "font-size:20px"),
         
         tags$br(style = "line-height: 20px"),
         
@@ -116,14 +114,14 @@ mod_tab_confirmation_ui <- function(id){
             width = 6,
             actionButton(
               inputId = ns("clean_last_info_guest"),
-              label = "Supprimer les derni\u00e8res informations enregistr\u00e9es"
+              label = "Neuesten Eintrag löschen"
             )
           ),
           column(
             width = 6,
             actionButton(
               inputId = ns("send_info_guest"),
-              label = "Envoyer mes choix aux mari\u00e9s"
+              label = "Senden Sie meine Auswahl an das Brautpaar"
             )
           )
         )
@@ -166,8 +164,8 @@ mod_tab_confirmation_server <- function(id, r_global){
       updateSelectInput(
         session = session,
         inputId = "name",
-        choices = c("Choisir dans la liste la personne", r_global$data_guests %>% distinct(name) %>% pull()),
-        selected = "Choisir dans la liste la personne"
+        choices = c("Wähle von der Liste", r_global$data_guests %>% distinct(name) %>% pull()),
+        selected = "Wähle von der Liste"
         )
 
     })
@@ -175,7 +173,7 @@ mod_tab_confirmation_server <- function(id, r_global){
     # Find info about guest in data and update selectinput menu according to guest type adult/teen/kid
     observeEvent(input$name, ignoreInit = TRUE, {
 
-      req(input$name != "Choisir dans la liste la personne")
+      req(input$name != "Wähle von der Liste")
       req(r_global$data_guests)
 
       r_local$type_guest <- r_global$data_guests %>%
@@ -225,7 +223,7 @@ mod_tab_confirmation_server <- function(id, r_global){
     observeEvent(input$save_info_guest, {
       
       r_local$name <- input$name
-      r_local$here_cocktail <- input$here_cocktail
+      r_local$here_cocktail <- "/" # input$here_cocktail
       r_local$here_diner <- input$here_diner
       r_local$here_sunday <- input$here_sunday
       r_local$special_diet <- input$special_diet
@@ -245,14 +243,14 @@ mod_tab_confirmation_server <- function(id, r_global){
       }
       
       if (r_local$here_diner == "Non") {
-        
+
         r_local$menu_diner <- NA_character_
-        
+
       }
 
       r_local$info <- r_local$info %>% 
         add_row(name = r_local$name,
-                here_cocktail = r_local$here_cocktail,
+                here_cocktail = "/", # r_local$here_cocktail,
                 here_diner = r_local$here_diner, 
                 here_sunday = r_local$here_sunday,
                 special_diet = r_local$special_diet,
@@ -260,7 +258,7 @@ mod_tab_confirmation_server <- function(id, r_global){
                 time_confirmation = as.character(Sys.time()))
       
       reset("name")
-      reset("here_cocktail")
+      # reset("here_cocktail")
       reset("here_diner")
       reset("here_sunday")
       reset("special_diet")
@@ -280,10 +278,10 @@ mod_tab_confirmation_server <- function(id, r_global){
     output$summary_info_guest <- renderTable({
       
       r_local$info %>% 
-        select(-time_confirmation) %>% 
+        select(-time_confirmation, -here_cocktail, -menu_diner) %>% 
         rename(
-          stats::setNames(c("name", "here_cocktail", "here_diner", "here_sunday", "special_diet", "menu_diner"), 
-                          c("Nom", "Pr\u00e9sence vin d\'honneur", "Pr\u00e9sence d\u00eener", "Pr\u00e9sence retour", "R\u00e9gime particulier", "Menu pour le d\u00eener") 
+          stats::setNames(c("name", "here_diner", "here_sunday", "special_diet"), 
+                          c("Name", "Campotel", "Früstück", "Kommentar") 
           )
         )
       
@@ -302,7 +300,7 @@ mod_tab_confirmation_server <- function(id, r_global){
       
       if (any(vec_guests_to_send %in% vec_guests_already_answer)) {
         
-        showNotification(ui = "Les informations de certains invit\u00e9s avaient d\u00e9j\u00e0 \u00e9t\u00e9 envoy\u00e9es aux mari\u00e9s. Elles ont \u00e9t\u00e9 remplac\u00e9es par celles que vous venez de renseigner.",
+        showNotification(ui = "Für einige Gäste wurden bereits Informationen an das Brautpaar verschickt. Sie wurden überschrieben durch die, die du gerade eingegeben hast",
                          type = "default")
         
       }
@@ -311,7 +309,7 @@ mod_tab_confirmation_server <- function(id, r_global){
       
       if (any(duplicated(vec_guests_to_send))) {
         
-        showNotification(ui = "Vous avez renseign\u00e9 des doublons d\'informations pour la m\u00eame personne. Seules les derni\u00e8res seront conserv\u00e9es.",
+        showNotification(ui = "Du hast doppelte Informationen für dieselbe Person eingegeben. Es bleiben nur die aktuellsten erhalten.",
                          type = "default")
         
         r_local$info <- r_local$info %>% 
@@ -325,7 +323,7 @@ mod_tab_confirmation_server <- function(id, r_global){
                                                           data_guests = r_global$data_guests)
       
       # Show notification
-      showNotification(ui = "Vos informations ont bien \u00e9t\u00e9 envoy\u00e9es aux mari\u00e9s.",
+      showNotification(ui = "Danke! Informationen wurden an das Brautpaar gesendet.",
                        type = "default")
       
       # Upload the new database
