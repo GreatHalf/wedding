@@ -9,8 +9,9 @@
 app_server <- function( input, output, session ) {
   
   credentials <- data.frame(
-    user = Sys.getenv("LOGIN_USER"), # mandatory
-    password = Sys.getenv("PWD_USER"), # mandatory
+    user =  "hochzeit", #Sys.getenv("LOGIN_USER"), # mandatory
+    password = "c2NyeXB0ABIAAAAIAAAAAQpB7hgTuvQ23/M6KfvHLFxjWn7dipPdPSi6OrHwol6i8Oxy8lHvL7jr53CcUcO+68AJ43W98NzsF7q4Y+2Jv/PGgd1uNBedMiu+yrUTwBLG", # Sys.getenv("PWD_USER"), # mandatory
+    is_hashed_password = TRUE,
     admin = FALSE,
     stringsAsFactors = FALSE
   )
@@ -29,9 +30,9 @@ app_server <- function( input, output, session ) {
   r_global <- reactiveValues()
     
   # Data on google drive
-  googledrive::drive_auth(cache = ".secrets", 
-                          email = Sys.getenv("GOOGLE_MAIL"))
-  
+  googledrive::drive_auth(
+    path = "earnest-runner-433717-a1-bab3686f6136.json"
+    )
   temp_dir <- tempdir()
   
   googledrive::drive_download("data_expenses", path = glue::glue(temp_dir, "/data_expenses.csv"), overwrite = TRUE) 

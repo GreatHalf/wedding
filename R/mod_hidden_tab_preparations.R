@@ -47,8 +47,8 @@ mod_hidden_tab_preparations_server <- function(id, r_global) {
     
     # Password OK + renderUI
     observeEvent(input$password_tab_preparation, {
-      
-      if (input$password_tab_preparation == Sys.getenv("PWD_COUPLE")) {
+      passwordCorrect <- scrypt::verifyPassword("c2NyeXB0ABIAAAAIAAAAAUeKr6AdVVcAL2CcaBc59GIj3KH7tgKNIa4y+6cXqDRS4+kGuwJx4UoIiw0fjqJtswseKRpgasvUYZqy9fZBHARRW/DRVQAITY83ADAex5WK", input$password_tab_preparation)
+      if (passwordCorrect) {
         
         output$show_tab_preparation <- renderUI({
           
