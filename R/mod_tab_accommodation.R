@@ -27,8 +27,10 @@ mod_tab_accommodation_ui <- function(id){
         tags$p("Campotel Nord-Ostsee", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
         tags$p("0 km, 1 Minute zu Fuß", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("https://www.campotel-nordostsee.de/ ", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
+        tags$p(
+              tags$a("campotel-nordostsee.de",
+               href = "https://www.campotel-nordostsee.de/",
+               target = "_blank"), style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
         tags$p("Hinweise zur Buchung:", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
         tags$p("Bitte bei der Buchung angeben:", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
         tags$p("Magnus Halbe und Malena Krüger", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
@@ -39,11 +41,14 @@ mod_tab_accommodation_ui <- function(id){
       
       column(
         width = 6, 
-        tags$p("Hotel & Restaurant Schimmelreiter, Hauptstraße 58-60, 24887 Silberstedt", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
+        tags$p("Hotel & Restaurant Schimmelreiter", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
-        tags$p("\u00c0 1.1 km, 3 Minuten im Auto", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
+        tags$p("1.1 km, 3 Minuten im Auto", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
-        tags$p("https://schimmelreiter-silberstedt.de/ ", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
+        tags$p(
+          tags$a("schimmelreiter-silberstedt.de",
+                 href = "https://schimmelreiter-silberstedt.de/",
+                 target = "_blank"), style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
         tags$p("Wesentlich teurer.", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center")
       )
     )
