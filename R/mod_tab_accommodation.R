@@ -23,58 +23,28 @@ mod_tab_accommodation_ui <- function(id){
     fluidRow(
       
       column(
-        width = 4, 
-        tags$p("Manoir de Belle-No\u00eb", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
+        width = 6, 
+        tags$p("Campotel Nord-Ostsee", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
-        tags$p("\u00c0 0 km, 0 minutes", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
+        tags$p("0 km, 1 Minute zu Fuß", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
-        tags$p("Chambres d\'h\u00f4tes & gites", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
-        tags$p("Capacit\u00e9 : 40/42 personnes", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$p("Prix : 25 euros par nuit par personne", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$p("La priorit\u00e9 sera donn\u00e9e \u00e0 nos copains qui picolent beaucoup (ah ah) et aux familles.", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
+        tags$p("https://www.campotel-nordostsee.de/ ", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
+        tags$p("Hinweise zur Buchung:", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
+        tags$p("Bitte bei der Buchung angeben:", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
+        tags$p("Magnus Halbe und Malena Krüger", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
+        tags$p("Hochzeit am 25.04.2025", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
-        tags$p("Espace camping", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
-        tags$p("Capacit\u00e9 : illimit\u00e9, plus on est de fous plus on rit", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$p("Prix : gratos", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$p("Des toilettes s\u00e8ches sont pr\u00e9sentes sur l\'espace camping.", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")
+        tags$p("Durch die Angabe erfolgt eine bessere Zuordnung und es kann wahlweise auch nur eine Nacht gebucht werden. Die Buchung erfolgt bitte persönlich über die Webseite.", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center")
         ),
       
       column(
-        width = 4,
-        align = "center",
-        tags$p("Domaine des Ormes", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
+        width = 6, 
+        tags$p("Hotel & Restaurant Schimmelreiter, Hauptstraße 58-60, 24887 Silberstedt", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
-        tags$p("\u00c0 8 km, 7 minutes", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
+        tags$p("\u00c0 1.1 km, 3 Minuten im Auto", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
-        tags$a("Site internet", href = "https://www.lesormes.com/fr", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center;"),
-        tags$br(style = "line-height: 20px"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("G\u00eetes 6 personnes", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
-        tags$p("Prix : 472 euros par nuit", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("Cabanes 2 personnes", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
-        tags$p("Prix : 140 euros par nuit", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("Cabanes 5 personnes", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
-        tags$p("Prix : 266 euros par nuit", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("Mobilhomes 6 personnes", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
-        tags$p("Prix : 326 euros par nuit", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("Cottages 6 personnes", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
-        tags$p("Prix : 398 euros par nuit", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("Cottages 8 personnes", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
-        tags$p("Prix : 470 euros par nuit", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")
-      ),
-      
-      column(
-        width = 4, 
-        tags$p("H\u00f4tels & chambres d\'h\u00f4tes \u00e0 Dol-de-Bretagne", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("\u00c0 4 km, 5 minutes", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("Vous trouverez de tout au niveau budget, types d\'h\u00e9bergements, etc.", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")
+        tags$p("https://schimmelreiter-silberstedt.de/ ", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
+        tags$p("Wesentlich teurer.", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center")
       )
     )
 
@@ -92,22 +62,19 @@ mod_tab_accommodation_server <- function(id, r_global){
  
     data_hebergements <- tibble(
       name = c(
-        "<b>Manoir de Belle-No\u00eb</b><br/>0 km 0 minutes", 
-        "<b>Domaine des Ormes</b><br/>8 km 7 minutes", 
-        "<b>H\u00f4tels & chambres d\'h\u00f4tes \u00e0 Dol-de-Bretagne</b><br/>4 km 5 minutes"), 
-      longitude = c(-1.7129955029636943, -1.73221750178322,  -1.7487624196891016),
-      
+        "<b>Campotel</b><br/>200m entfernt",
+        "<b>Hotel & Restaurant Schimmelreiter</b><br/> 1,1 km entfernt"
+      ),
+      longitude = c(9.360414134719612, 9.370415157372763)
     )
-    
+    # schimmelreiter: 54.51880316589025,  9.370415157372763
     output$carte_hebergements <- renderLeaflet({
-      
       data_markers_accomodation <- tibble(
-        longitude = c(-1.7129955029636943, -1.73221750178322,  -1.7487624196891016),
-        latitude = c(48.53024518235586, 48.488157127874516, 48.54598088189248),
+        latitude = c(54.514787225498246),
+        longitude = c(9.360414134719612),
         name = c(
-          "<b>Manoir de Belle-No\u00eb</b><br/>0 km 0 minutes", 
-          "<b>Domaine des Ormes</b><br/>8 km 7 minutes", 
-          "<b>H\u00f4tels & chambres d\'h\u00f4tes \u00e0 Dol-de-Bretagne</b><br/>4 km 5 minutes")
+          "<b>Campotel</b><br/>200m entfernt"
+        )
       )
         
       get_map_wedding(
