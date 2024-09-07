@@ -55,7 +55,9 @@ app_ui <- function(request) {
                tabPanel(
                  title = "Admin",
                  mod_hidden_tab_preparations_ui("hidden_tab_preparations_ui_1")
-               )
+               ),
+               
+               collapsible = TRUE
                
                )
   )
