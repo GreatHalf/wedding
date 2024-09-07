@@ -27,10 +27,10 @@ mod_tab_couple_ui <- function(id){
              # Texte
              tags$div(class = "landing-block foreground-content",
                       tags$div(class = "foreground-text",
-                               tags$h1("Margot & David", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px"),
-                               tags$p("se disent oui", style = "font-family: 'Old script'; font-size:50px; letter-spacing:5px"),
+                               tags$h1("Magnus & Malena", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px"),
+                               tags$p("heiraten", style = "font-family: 'Old script'; font-size:50px; letter-spacing:5px"),
                                tags$br(),
-                               tags$p("02 octobre 2021", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px")
+                               tags$p("25.04.2025", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px")
                       )
              ),
              
@@ -72,21 +72,21 @@ mod_tab_couple_server <- function(id, r_global){
     
     output$decompte_vie_commune <- renderText({
       
-      get_count_countdown_moments(start_moment = "2009-10-14 04:00:00",
+      get_count_countdown_moments(start_moment = "2015-04-19 04:00:00",
                                   end_moment = now(tzone = "Europe/Paris"),
                                   text = "depuis leur rencontre",
                                   time_zone = "Europe/Paris",
-                                  language = "fr")
+                                  language = "de")
       
     })
     
     output$decompte_mariage <- renderText({
 
       get_count_countdown_moments(start_moment = now(tzone = "Europe/Paris"),
-                                  end_moment = "2021-10-02 15:00:00",
+                                  end_moment = "2025-04-25 15:00:00",
                                   text = "jusqu'au mariage",
                                   time_zone = "Europe/Paris",
-                                  language = "fr")
+                                  language = "de")
     })
     
   })
