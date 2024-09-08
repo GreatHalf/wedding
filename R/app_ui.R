@@ -92,7 +92,7 @@ golem_add_external_resources <- function(){
   )
   
   set_labels(
-    language = "de",
+    language = "en",
     "Please authenticate" = "Hochzeitsseite von Magnus & Malena",
     "Username:" = "Benutzername (für alle gleich):",
     "Password:" = "Passwort (für alle gleich):",
