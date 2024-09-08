@@ -19,20 +19,14 @@ mod_tab_couple_ui <- function(id){
              
              # Image fond d'écran
              tags$div(class = "landing-block background-content",
-                      
-                      img(src = glue::glue("www/", "paarfoto.jpg"))
-                      
-             ),
-             
-             # Texte
-             tags$div(class = "landing-block foreground-content",
-                      tags$div(class = "foreground-text",
-                               tags$h1("Magnus & Malena", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px"),
-                               tags$p("heiraten", style = "font-family: 'Old script'; font-size:50px; letter-spacing:5px"),
+                      align = "center",
+                      img(src = glue::glue("www/", "paarfoto.jpg")),
+                               tags$h1("Magnus & Malena heiraten", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px"),
+                               # tags$p("heiraten", style = "font-family: 'Old script'; font-size:50px; letter-spacing:5px"),
                                tags$br(),
-                               tags$p("25.04.2025", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px")
+                               tags$p("25.04.2025", style = "font-family: 'Bauer Bodoni Std 1'; font-size:50px; letter-spacing:10px")
                       )
-             ),
+             ,
              
              # Décomptes
              span(
