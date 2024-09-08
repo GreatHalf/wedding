@@ -35,7 +35,7 @@ mod_tab_couple_ui <- function(id){
                         style = "font-family: 'Bauer Bodoni Std 1'; 
                         font-size:20px; 
                         letter-spacing:5px; 
-                        color: black;
+                        color: #4b0082;
                         text-align: center" 
                       )
               )
@@ -79,7 +79,7 @@ mod_tab_couple_server <- function(id, r_global){
 
       get_count_countdown_moments(start_moment = now(tzone = "Europe/Paris"),
                                   end_moment = "2025-04-25 15:00:00",
-                                  text = "<br>bis zur Hochzeit",
+                                  text = " bis zur Hochzeit",
                                   time_zone = "Europe/Paris",
                                   language = "de")
     })

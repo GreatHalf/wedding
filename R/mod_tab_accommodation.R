@@ -13,17 +13,10 @@ mod_tab_accommodation_ui <- function(id){
   ns <- NS(id)
   
   tagList(
-    
-    leafletOutput(
-      outputId = ns("carte_hebergements")
-    ),
-    
-    tags$br(style = "line-height: 80px"),
-    
     fluidRow(
       
       column(
-        width = 6, 
+        width = 12, 
         tags$p("Campotel Nord-Ostsee", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
         tags$p("0 km, 1 Minute zu Fuß", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
@@ -39,18 +32,26 @@ mod_tab_accommodation_ui <- function(id){
         tags$p("Durch die Angabe erfolgt eine bessere Zuordnung und es kann wahlweise auch nur eine Nacht gebucht werden. Die Buchung erfolgt bitte persönlich über die Webseite.", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center")
         ),
       
-      column(
-        width = 6, 
-        tags$p("Hotel & Restaurant Schimmelreiter", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p("1.1 km, 3 Minuten im Auto", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
-        tags$br(style = "line-height: 20px"),
-        tags$p(
-          tags$a("schimmelreiter-silberstedt.de",
-                 href = "https://schimmelreiter-silberstedt.de/",
-                 target = "_blank"), style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
-        tags$p("Wesentlich teurer.", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center")
+      tags$br(style = "line-height: 79px"),
+      
+      leafletOutput(
+        outputId = ns("carte_hebergements")
       )
+      
+      
+      
+      # column(
+      #   width = 6, 
+      #   tags$p("Hotel & Restaurant Schimmelreiter", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
+      #   tags$br(style = "line-height: 20px"),
+      #   tags$p("1.1 km, 3 Minuten im Auto", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
+      #   tags$br(style = "line-height: 20px"),
+      #   tags$p(
+      #     tags$a("schimmelreiter-silberstedt.de",
+      #            href = "https://schimmelreiter-silberstedt.de/",
+      #            target = "_blank"), style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
+      #   tags$p("Wesentlich teurer.", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center")
+      # )
     )
 
   )
@@ -67,10 +68,9 @@ mod_tab_accommodation_server <- function(id, r_global){
  
     data_hebergements <- tibble(
       name = c(
-        "<b>Campotel</b><br/>200m entfernt",
-        "<b>Hotel & Restaurant Schimmelreiter</b><br/> 1,1 km entfernt"
+        "<b>Campotel</b><br/>200m entfernt"
       ),
-      longitude = c(9.360414134719612, 9.370415157372763)
+      longitude = c(9.360414134719612)
     )
     # schimmelreiter: 54.51880316589025,  9.370415157372763
     output$carte_hebergements <- renderLeaflet({

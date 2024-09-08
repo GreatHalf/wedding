@@ -30,7 +30,7 @@ mod_tab_confirmation_ui <- function(id){
       
       sidebarPanel(
         
-        width = 5,
+        width = 4,
         
         selectInput(
           inputId = ns("name"),
@@ -92,22 +92,13 @@ mod_tab_confirmation_ui <- function(id){
         
         tags$br(style = "line-height: 20px"),
         
-        tags$p("* Vorgang bitte erneut ausführen, um eine weitere Person hinzuzufügen und danach unten 'Senden'", style = "font-size:15px; letter-spacing:3px; color: black"),
+        tags$p("* Vorgang bitte erneut ausführen, um eine weitere Person hinzuzufügen und danach auf  'An das Brautpaars enden' drücken", style = "font-size:18px; letter-spacing:3px; color: #;")
         
       ),
       
       mainPanel(
         
-        width = 7,
-        
-        h1("Zusammenfassung", style = "font-size:20px"),
-        
-        tags$br(style = "line-height: 20px"),
-        
-        tableOutput(ns("summary_info_guest")),
-        
-        tags$br(style = "line-height: 20px"),
-        
+        width = 8,
         fluidRow(
           align = "center",
           column(
@@ -121,9 +112,20 @@ mod_tab_confirmation_ui <- function(id){
             width = 6,
             actionButton(
               inputId = ns("send_info_guest"),
-              label = "An das Brautpaar senden"
+              label = "An das Brautpaar senden",
+              style="color: #fff; background-color: #4b0082; border-color: #2e6da4"
             )
-          )
+          ),
+          
+        # h1("Zusammenfassung", style = "font-size:20px"),
+        
+      # tags$br(style = "line-height: 20px"),
+        
+        tableOutput(ns("summary_info_guest"))
+        
+        # tags$br(style = "line-height: 20px"),
+        
+        
         )
         
       )

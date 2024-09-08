@@ -5,7 +5,7 @@
 #' @import shiny
 #' @noRd
 #' 
-titleStyle <- "font-family: \'MrsEavesItalic\'; font-size:64px;"
+titleStyle <- "font-family: \'MrsEavesItalic\'; font-size:64px;color:#4b0082"
 app_ui <- function(request) {
   
   tagList(
@@ -50,11 +50,11 @@ app_ui <- function(request) {
                  mod_tab_accommodation_ui("tab_accommodation_ui_1")
                ),
                
-               tabPanel(
-                 title = "Trauzeugen",
-                 h1(strong("Trauzeugen"), style = titleStyle),
-                 mod_tab_witnesses_ui("tab_witnesses_ui_1")
-               ),
+               # tabPanel(
+               #   title = "Trauzeugen",
+               #   h1(strong("Trauzeugen"), style = titleStyle),
+               #   mod_tab_witnesses_ui("tab_witnesses_ui_1")
+               # ),
                
                tabPanel(
                  title = "Sehenswürdigkeiten",
