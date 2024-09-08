@@ -5,7 +5,7 @@
 #' @import shiny
 #' @noRd
 #' 
-titleStyle <- "font-family: \'MrsEavesItalic\'; font-size:64px;color:#4b0082"
+titleStyle <- "font-family: \'MrsEavesItalic\'; font-size:64px; text-decoration-color:#4b0082;"
 app_ui <- function(request) {
   
   tagList(
@@ -17,13 +17,13 @@ app_ui <- function(request) {
                
                tabPanel(
                  title = "Willkommen",
-                 h1(strong("Willkommen"), style = titleStyle), 
+                 h1(strong(tags$u("Willkommen")), style = titleStyle), 
                  mod_tab_couple_ui("tab_couple_ui_1")
                ),
                
                tabPanel(
                  title = "Teilnahme bestätigen",
-                 h1(strong("Teilnahme bestätigen"), style = titleStyle),
+                 h1(strong(tags$u("Teilnahme bestätigen")), style = titleStyle),
                  if (Sys.getenv("USE_PREFILLED_DATA_GUEST") == "no") {
                    mod_tab_confirmation_text_ui("tab_confirmation_ui_1") # if you want to let your guests writte their name
                  } else {
@@ -31,40 +31,42 @@ app_ui <- function(request) {
                    mod_tab_confirmation_ui("tab_confirmation_ui_1") # if you want to use a pre-filled google sheets with the names of your guests
                  }
                ),
+              
+              tabPanel(
+                title = "Unterkunft",
+                h1(strong(tags$u("Unterkunft")), style = titleStyle),
+                mod_tab_accommodation_ui("tab_accommodation_ui_1")
+              ),
                
                tabPanel(
                  title = "Tagesprogramm",
-                 h1(strong("Tagesprogramm"), style = titleStyle),
+                 h1(strong(tags$u("Tagesprogramm")), style = titleStyle),
                  mod_tab_schedule_ui("tab_schedule_ui_1")
                ),
                
                tabPanel(
                  title = "Veranstaltungsorte",
-                 h1(strong("Veranstaltungsorte"), style = titleStyle),
+                 h1(strong(tags$u("Veranstaltungsorte")), style = titleStyle),
                  mod_tab_place_ui("tab_place_ui_1")
                ),
                
-               tabPanel(
-                 title = "Unterkunft",
-                 h1(strong("Unterkunft"), style = titleStyle),
-                 mod_tab_accommodation_ui("tab_accommodation_ui_1")
-               ),
+               
                
                # tabPanel(
                #   title = "Trauzeugen",
-               #   h1(strong("Trauzeugen"), style = titleStyle),
+               #   h1(strong(tags$u("Trauzeugen"), style = titleStyle),
                #   mod_tab_witnesses_ui("tab_witnesses_ui_1")
                # ),
                
                tabPanel(
                  title = "Sehenswürdigkeiten",
-                 h1(strong("Sehenswürdigkeiten"), style = titleStyle),
+                 h1(strong(tags$u("Sehenswürdigkeiten")), style = titleStyle),
                  mod_tab_covid_ui("tab_covid_ui_1")
                ),
                
                tabPanel(
                  title = "Admin",
-                 h1(strong("Admin"), style = titleStyle),
+                 h1(strong(tags$u("Admin")), style = titleStyle),
                  mod_hidden_tab_preparations_ui("hidden_tab_preparations_ui_1")
                ),
                
@@ -90,10 +92,10 @@ golem_add_external_resources <- function(){
   )
   
   set_labels(
-    language = "en",
+    language = "de",
     "Please authenticate" = "Hochzeitsseite von Magnus & Malena",
-    "Username:" = "Benutzername (für alle gleich) :",
-    "Password:" = "Passwort (für alle gleich) :",
+    "Username:" = "Benutzername (für alle gleich):",
+    "Password:" = "Passwort (für alle gleich):",
     "Login" = "Login",
     "Username or password are incorrect" = "Benutzername oder Passwort ist falscsh"
   )

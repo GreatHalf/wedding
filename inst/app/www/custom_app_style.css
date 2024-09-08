@@ -106,8 +106,8 @@ html,body{
 
 #hidden_tab_preparations_ui_1-password_tab_preparation:focus {
     font-family: 'Bauer Bodoni Std 1';
-    border-color: rgb(116, 87, 80);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(116, 87, 80);
+    border-color: rgb(75, 0, 130);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(75, 0, 130);
     outline: 0 none;
 }
 
@@ -119,8 +119,8 @@ html,body{
 
 #tab_confirmation_ui_1-save_info_guest:focus {
     font-family: 'Bauer Bodoni Std 1';
-    border-color: rgb(116, 87, 80);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(116, 87, 80);
+    border-color: rgb(75, 0, 130);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(75, 0, 130);
     outline: 0 none;
 }
 
@@ -130,8 +130,8 @@ html,body{
 
 #tab_confirmation_ui_1-add_guest:focus {
     font-family: 'Bauer Bodoni Std 1';
-    border-color: rgb(116, 87, 80);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(116, 87, 80);
+    border-color: rgb(75, 0, 130);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(75, 0, 130);
     outline: 0 none;
 }
 
@@ -143,8 +143,8 @@ html,body{
 #tab_confirmation_ui_1-send_info_guest:focus {
     font-family: 'Bauer Bodoni Std 1';
     background-color: rgb(235, 235, 235);
-    border-color: rgb(116, 87, 80);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(116, 87, 80);
+    border-color: rgb(75, 0, 130);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(75, 0, 130);
     outline: 0 none;
 }
 
@@ -154,8 +154,8 @@ html,body{
 
 #tab_confirmation_ui_1-clean_last_info_guest:focus {
     font-family: 'Bauer Bodoni Std 1';
-    border-color: rgb(116, 87, 80);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(116, 87, 80);
+    border-color: rgb(75, 0, 130);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(75, 0, 130);
     outline: 0 none;
 }
 

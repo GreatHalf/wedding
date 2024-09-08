@@ -55,7 +55,7 @@ mod_tab_confirmation_ui <- function(id){
             width = 12,
             selectInput(
               inputId = ns("here_diner"),
-              label = "Übernachtung im Campotel (die Buchung nimmt jeder Gast selbst vor)",
+              label = "Übernachtung im Campotel (bitte selbst buchen, siehe 'Unterkunft')",
               choices = c("", "Ja", "Nein"),
               selected = ""
             )
@@ -92,7 +92,7 @@ mod_tab_confirmation_ui <- function(id){
         
         tags$br(style = "line-height: 20px"),
         
-        tags$p("* Vorgang bitte erneut ausführen, um eine weitere Person hinzuzufügen und danach auf  'An das Brautpaars enden' drücken", style = "font-size:18px; letter-spacing:3px; color: #;")
+        tags$p("* Vorgang bitte erneut ausführen, um eine weitere Person hinzuzufügen und danach auf  'An das Brautpaar senden' drücken", style = "font-size:18px; letter-spacing:3px; color: #;")
         
       ),
       
