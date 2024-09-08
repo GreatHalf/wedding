@@ -16,8 +16,8 @@ app_ui <- function(request) {
     fluidPage(title = NULL,
                
                tabPanel(
-                 title = "Rezeption",
-                 h1(strong("Hallo"), style = titleStyle), 
+                 title = "Willkommen",
+                 h1(strong("Willkommen"), style = titleStyle), 
                  mod_tab_couple_ui("tab_couple_ui_1")
                ),
                

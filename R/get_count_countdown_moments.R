@@ -35,7 +35,10 @@ get_count_countdown_moments <- function(start_moment, end_moment, text,
   
   if (language == "en") {
     glue("{nb_days} d. {nb_hours} h. {nb_minutes} m. {nb_seconds} s. {text}")
-  } else if (language == "fr") {
+  } else if (language == "de") {
+    glue("{nb_days} Tage. {nb_hours} Stunden. {nb_minutes} Minuten. {nb_seconds} Sekunden. {text}")
+  }
+  else if (language == "fr") {
     glue("{nb_days} j. {nb_hours} h. {nb_minutes} m. {nb_seconds} s. {text}")
   }
   

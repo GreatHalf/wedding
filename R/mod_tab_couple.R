@@ -24,32 +24,33 @@ mod_tab_couple_ui <- function(id){
                                tags$h1("Magnus & Malena heiraten", style = "font-family: 'Bauer Bodoni Std 1'; letter-spacing:10px"),
                                # tags$p("heiraten", style = "font-family: 'Old script'; font-size:50px; letter-spacing:5px"),
                                tags$br(),
-                               tags$p("25.04.2025", style = "font-family: 'Bauer Bodoni Std 1'; font-size:50px; letter-spacing:10px")
+                               tags$p("25.04.2025", style = "font-family: 'Bauer Bodoni Std 1'; font-size:50px; letter-spacing:10px"),
+                       # textOutput(
+                       #   outputId = ns("decompte_vie_commune")
+                       # ),
+                      span(
+                        textOutput(
+                          outputId = ns("decompte_mariage")
+                        ),
+                        style = "font-family: 'Bauer Bodoni Std 1'; 
+                        font-size:20px; 
+                        letter-spacing:5px; 
+                        color: black;
+                        text-align: center" 
                       )
-             ,
+              )
              
              # Décomptes
-             span(
-               textOutput(
-                 outputId = ns("decompte_vie_commune")
-                 ),
-               style = "font-family: 'Bauer Bodoni Std 1'; 
-                        font-size:20px; 
-                        letter-spacing:5px; 
-                        color: white;
-                        text-align: center" 
-               ),
+             # span(
+             #   
+             #   style = "font-family: 'Bauer Bodoni Std 1'; 
+             #            font-size:20px; 
+             #            letter-spacing:5px; 
+             #            color: white;
+             #            text-align: center" 
+             #   ),
              
-             span(
-               textOutput(
-                 outputId = ns("decompte_mariage")
-               ),
-               style = "font-family: 'Bauer Bodoni Std 1'; 
-                        font-size:20px; 
-                        letter-spacing:5px; 
-                        color: white;
-                        text-align: center" 
-             ),     
+              
     )
   )
   
@@ -64,21 +65,21 @@ mod_tab_couple_server <- function(id, r_global){
     
     ns <- session$ns
     
-    output$decompte_vie_commune <- renderText({
-      
-      get_count_countdown_moments(start_moment = "2015-04-19 04:00:00",
-                                  end_moment = now(tzone = "Europe/Paris"),
-                                  text = "depuis leur rencontre",
-                                  time_zone = "Europe/Paris",
-                                  language = "de")
-      
-    })
+    # output$decompte_vie_commune <- renderText({
+    #   
+    #   get_count_countdown_moments(start_moment = "2015-04-19 04:00:00",
+    #                               end_moment = now(tzone = "Europe/Paris"),
+    #                               text = "depuis leur rencontre",
+    #                               time_zone = "Europe/Paris",
+    #                               language = "de")
+    #   
+    # })
     
     output$decompte_mariage <- renderText({
 
       get_count_countdown_moments(start_moment = now(tzone = "Europe/Paris"),
                                   end_moment = "2025-04-25 15:00:00",
-                                  text = "jusqu'au mariage",
+                                  text = "<br>bis zur Hochzeit",
                                   time_zone = "Europe/Paris",
                                   language = "de")
     })

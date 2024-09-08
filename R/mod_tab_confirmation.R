@@ -92,7 +92,7 @@ mod_tab_confirmation_ui <- function(id){
         
         tags$br(style = "line-height: 20px"),
         
-        tags$p("* Vorgang bitte erneut ausführen, um eine weitere Person hinzuzufügen", style = "font-size:15px; letter-spacing:3px; color: black"),
+        tags$p("* Vorgang bitte erneut ausführen, um eine weitere Person hinzuzufügen und danach unten 'Senden'", style = "font-size:15px; letter-spacing:3px; color: black"),
         
       ),
       
@@ -121,7 +121,7 @@ mod_tab_confirmation_ui <- function(id){
             width = 6,
             actionButton(
               inputId = ns("send_info_guest"),
-              label = "Senden Sie meine Auswahl an das Brautpaar"
+              label = "An das Brautpaar senden"
             )
           )
         )
