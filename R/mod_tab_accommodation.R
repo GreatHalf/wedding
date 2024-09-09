@@ -16,7 +16,8 @@ mod_tab_accommodation_ui <- function(id){
     fluidRow(
       
       column(
-        width = 12, 
+        offset = 1,
+        width = 10, 
         tags$p("Campotel Nord-Ostsee", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
         tags$p("0 km, 1 Minute zu Fuß", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
@@ -34,9 +35,12 @@ mod_tab_accommodation_ui <- function(id){
         ),
       
       tags$br(style = "line-height: 79px"),
-      
-      leafletOutput(
-        outputId = ns("carte_hebergements")
+      column(
+        offset = 1,
+        width = 10, 
+        leafletOutput(
+          outputId = ns("carte_hebergements")
+        )
       )
       
       

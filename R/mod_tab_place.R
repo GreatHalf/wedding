@@ -19,12 +19,13 @@ mod_tab_place_ui <- function(id){
       
       
       column(
+        offset = 1,
         width = 10,
         align = "center",
         leafletOutput(
           outputId = ns("carte_belle_noe"),
-          height = 341,
-          width = 512
+          # height = 341,
+          # width = 512
         )
       )
     ),
@@ -32,7 +33,8 @@ mod_tab_place_ui <- function(id){
     fluidRow(
       
       column(
-        width = 12,
+        width = 10,
+        offset = 1,
         
         tags$br(style = "line-height: 20px"),
         tags$p("Schlosskapelle Schloss Gottorf", style = "font-family: \'Bauer Bodoni Std 1\'; letter-spacing:3px; text-align: center"),
@@ -43,7 +45,8 @@ mod_tab_place_ui <- function(id){
     
     fluidRow(
       column(
-        width = 12,
+        width = 10,
+        offset = 1,
         align = "center",
         tags$div(img(src = "www/parken_plus_obergeschoss.jpg"), style = "text-align: center")
       )
@@ -51,8 +54,8 @@ mod_tab_place_ui <- function(id){
     
     fluidRow(
       column(
-        width = 12,
-        align = "center",
+        width = 10,
+        offset = 1,
         tags$div(img(src = "www/elbschloss_mini.jpg"), style = "text-align: center")
       )
     ),
@@ -61,14 +64,15 @@ mod_tab_place_ui <- function(id){
     fluidRow(
       
       column(
-        width = 6,
+        offset = 1,
+        width = 5,
         tags$br(style = "line-height: 45px"),
         tags$p("Eventsaal Silberstedt", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 30px; letter-spacing:3px; text-align: center"),
         tags$p("Hollingstedter Str. 2, 24887 Silberstedt", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")
       ),
       
       column(
-        width = 6,
+        width = 5,
         tags$br(style = "line-height: 45px"),
         tags$p("Campotel Nord-Ostsee", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 30px; letter-spacing:3px; text-align: center"),
         tags$p("Hollingstedter Str. 2, 24887 Silberstedt", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")

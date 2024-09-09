@@ -92,7 +92,7 @@ mod_tab_confirmation_ui <- function(id){
         
         tags$br(style = "line-height: 20px"),
         
-        tags$p("* Vorgang bitte erneut ausführen, um eine weitere Person hinzuzufügen und danach auf  'An das Brautpaar senden' drücken", style = "font-size:18px; letter-spacing:3px; color: #;")
+        tags$p("* Vorgang bitte erneut ausführen, um eine weitere Person hinzuzufügen und danach auf  'An das Brautpaar senden' drücken", style = "font-size:18px; letter-spacing:3px; color: #4b0082;")
         
       ),
       
@@ -225,7 +225,7 @@ mod_tab_confirmation_server <- function(id, r_global){
     observeEvent(input$save_info_guest, {
       
       r_local$name <- input$name
-      r_local$here_cocktail <- "/" # input$here_cocktail
+      r_local$here_cocktail <- "angemeldet" # input$here_cocktail
       r_local$here_diner <- input$here_diner
       r_local$here_sunday <- input$here_sunday
       r_local$special_diet <- input$special_diet

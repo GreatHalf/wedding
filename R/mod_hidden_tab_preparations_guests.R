@@ -66,7 +66,7 @@ mod_hidden_tab_preparations_guests_server <- function(id, r_global){
     
     output$number_confirmations <- renderText({
       
-      count_confirmations(filter_confirmation = "(here_cocktail == 'Oui' | here_diner == 'Oui' | here_sunday == 'Oui')", 
+      count_confirmations(filter_confirmation = "(here_cocktail == 'angemeldet' | here_diner == 'Oui' | here_sunday == 'Oui')", 
                           data_guests = r_global$data_guests)
       
     })
@@ -74,7 +74,7 @@ mod_hidden_tab_preparations_guests_server <- function(id, r_global){
     output$number_adults <- renderText({
       
       count_confirmations(filter_confirmation = c("type == 'Adulte'",
-                                                  "(here_cocktail == 'Oui' | here_diner == 'Oui' | here_sunday == 'Oui')"), 
+                                                  "(here_cocktail == 'angemeldet' | here_diner == 'Oui' | here_sunday == 'Oui')"), 
                           data_guests = r_global$data_guests)
 
     })
@@ -82,7 +82,7 @@ mod_hidden_tab_preparations_guests_server <- function(id, r_global){
     output$number_teenagers <- renderText({
       
       count_confirmations(filter_confirmation = c("type == 'Ado'",
-                                                  "(here_cocktail == 'Oui' | here_diner == 'Oui' | here_sunday == 'Oui')"), 
+                                                  "(here_cocktail == 'angemeldet' | here_diner == 'Oui' | here_sunday == 'Oui')"), 
                           data_guests = r_global$data_guests)
       
     })
@@ -90,7 +90,7 @@ mod_hidden_tab_preparations_guests_server <- function(id, r_global){
     output$number_kids <- renderText({
       
       count_confirmations(filter_confirmation = c("type == 'Enfant'",
-                                                  "(here_cocktail == 'Oui' | here_diner == 'Oui' | here_sunday == 'Oui')"), 
+                                                  "(here_cocktail == 'angemeldet' | here_diner == 'Oui' | here_sunday == 'Oui')"), 
                           data_guests = r_global$data_guests)
       
     })
@@ -108,7 +108,7 @@ mod_hidden_tab_preparations_guests_server <- function(id, r_global){
         select(name, type, here_cocktail, here_diner, here_sunday) %>% 
         rename(
           stats::setNames(c("name", "type", "here_cocktail", "here_diner", "here_sunday"), 
-                          c("Nom", "Cat\u00e9gorie", "Pr\u00e9sence vin d\'honneur", "Pr\u00e9sence d\u00eener", "Pr\u00e9sence retour") 
+                          c("Name", "Kategorie", "Angemeldet?", "Aparthotel", "Frühstuck") 
           )
         )
       
