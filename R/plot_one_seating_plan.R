@@ -20,7 +20,7 @@ plot_one_seating_plan <- function(.data, id_table, font_family_table = "Times", 
 
   data_guests_one_table <- .data %>% 
     filter(table == id_table) %>% 
-    filter(here_diner == "Oui") %>% 
+    filter(time_confirmation != "NA") %>% 
     mutate(id_guest = row_number())
   
   number_of_guests <- nrow(data_guests_one_table)
