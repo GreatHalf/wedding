@@ -43,8 +43,8 @@ Stadt ein wichtiges Zentrum für Handel und Kultur wurde.", style = "font-family
       tags$p("Hier können Groß und Klein viel über das Wikingerleben lernen.
 Nicht nur das Museum selbst, sondern auch die Wikingerhäuser
 am Haddebyer Noor versetzen einen zurück in die Zeit der
-Wikinger an der Schlei.", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")
-    ),
+Wikinger an der Schlei.", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
+
     #
     tags$p("Danewerk und Danewerkmuseum", style = "font-family: \'Bauer Bodoni Std 1\'; letter-spacing:3px; text-align: center"),
     tags$p("Das Danewerk und der frühstädtische Handelsplatz Haithabu im
@@ -81,6 +81,7 @@ Holstein. Der historische 'Bibelgarten', in dem Pflanzen, die in
 der Bibel vorkommen, wachsen, kann auch besucht werden. Das 
 Kloster kann frei betreten werden, nur für die Kirche muss man 
 sich einer Führung anschließen.", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")
+    )
     )
   )
   

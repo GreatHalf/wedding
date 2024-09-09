@@ -19,6 +19,10 @@ mod_tab_accommodation_ui <- function(id){
         offset = 1,
         width = 10, 
         tags$p("Campotel Nord-Ostsee", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 25px; letter-spacing:3px; text-align: center"),
+        tags$p(
+          tags$a("Hollingstedter Str. 2, 24887 Silberstedt",
+                 href = "https://maps.app.goo.gl/XjGeuqHgRHZUrX5o6",
+                 target = "_blank"), style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
         tags$p("0 km, 1 Minute zu Fuß", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
         tags$p(

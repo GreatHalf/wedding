@@ -38,7 +38,10 @@ mod_tab_place_ui <- function(id){
         
         tags$br(style = "line-height: 20px"),
         tags$p("Schlosskapelle Schloss Gottorf", style = "font-family: \'Bauer Bodoni Std 1\'; letter-spacing:3px; text-align: center"),
-        tags$p("OG, Schloßinsel 1, 24837 Schlleswig", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")
+        tags$p(
+          tags$a("OG, Schloßinsel 1, 24837 Schleswig",
+                 href = "https://maps.app.goo.gl/fsEW6GL41z1BNomC6",
+                 target = "_blank"), style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
         ),
     ),
     
@@ -68,14 +71,20 @@ mod_tab_place_ui <- function(id){
         width = 5,
         tags$br(style = "line-height: 45px"),
         tags$p("Eventsaal Silberstedt", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 30px; letter-spacing:3px; text-align: center"),
-        tags$p("Hollingstedter Str. 2, 24887 Silberstedt", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")
+        tags$p(
+          tags$a("Hollingstedter Str. 2, 24887 Silberstedt",
+                 href = "https://maps.app.goo.gl/FCUFQXRKKKhw8WLq6",
+                 target = "_blank"), style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
       ),
       
       column(
         width = 5,
         tags$br(style = "line-height: 45px"),
         tags$p("Campotel Nord-Ostsee", style = "font-family: \'Bauer Bodoni Std 1\'; font-size: 30px; letter-spacing:3px; text-align: center"),
-        tags$p("Hollingstedter Str. 2, 24887 Silberstedt", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center")
+        tags$p(
+          tags$a("Hollingstedter Str. 2, 24887 Silberstedt",
+                 href = "https://maps.app.goo.gl/XjGeuqHgRHZUrX5o6",
+                 target = "_blank"), style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
       )
       
     )
