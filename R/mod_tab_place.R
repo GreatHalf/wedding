@@ -35,8 +35,6 @@ mod_tab_place_ui <- function(id){
       column(
         width = 10,
         offset = 1,
-        
-        tags$br(style = "line-height: 20px"),
         tags$p("Schlosskapelle Schloss Gottorf", style = "font-family: \'Bauer Bodoni Std 1\'; letter-spacing:3px; text-align: center"),
         tags$p(
           tags$a("OG, Schloßinsel 1, 24837 Schleswig",
@@ -48,19 +46,19 @@ mod_tab_place_ui <- function(id){
     
     fluidRow(
       column(
-        width = 10,
+        width = 8,
         offset = 1,
         align = "center",
-        
-        tags$div(img(src = "www/parken_plus_obergeschoss.jpg"), style = "text-align: center; width: 100%; padding: 0;")
+        tags$div(img(src = "www/parken_plus_obergeschoss.jpg"), style = "width: 100%; padding: 0;")
       )
     ),
     
     fluidRow(
       column(
-        width = 10,
+        width = 8,
         offset = 1,
-        tags$div(img(src = "www/elbschloss_mini.jpg"), style = "text-align: center; width: 100%; padding: 0;")
+        align = "center",
+        tags$div(img(src = "www/elbschloss_mini.jpg"), style = "width: 100%; padding: 0;")
       )
     ),
     
