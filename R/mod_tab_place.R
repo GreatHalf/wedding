@@ -51,7 +51,8 @@ mod_tab_place_ui <- function(id){
         width = 10,
         offset = 1,
         align = "center",
-        tags$div(img(src = "www/parken_plus_obergeschoss.jpg"), style = "text-align: center")
+        
+        tags$div(img(src = "www/parken_plus_obergeschoss.jpg"), style = "text-align: center; width: 100%; padding: 0;")
       )
     ),
     
@@ -59,7 +60,7 @@ mod_tab_place_ui <- function(id){
       column(
         width = 10,
         offset = 1,
-        tags$div(img(src = "www/elbschloss_mini.jpg"), style = "text-align: center")
+        tags$div(img(src = "www/elbschloss_mini.jpg"), style = "text-align: center; width: 100%; padding: 0;")
       )
     ),
     
