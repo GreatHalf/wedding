@@ -27,9 +27,9 @@ mod_tab_confirmation_ui <- function(id){
       tags$p("Aufgrund von begrenztem Platz in der Kapelle haben wir uns entschieden,", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
       tags$p("alle Gäste ohne ihre (minderjährigen) Kinder einzuladen.", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
       tags$br(style = "line-height: 40px"),
-      tags$p("Da wir schon länger 1 bis 2 Haushalte führen,", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
-      tags$p("brauchen wir nichts mehr zum Einstand.", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
-      tags$p("Stattdessen würden uns über Geldgeschenke freuen.", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
+      tags$p("Da wir schon lange einen gemeinsamen Haushalt führen,", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
+      tags$p("und der Platz begrenzt ist,", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
+      tags$p("würden wir uns über Geldgeschenke freuen.", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
       tags$br(style = "line-height: 40px"),
     ),
     

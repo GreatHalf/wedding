@@ -105,10 +105,10 @@ mod_hidden_tab_preparations_guests_server <- function(id, r_global){
     output$list_guest <- DT::renderDataTable({
       
       r_global$data_guests %>% 
-        select(name, type, here_cocktail, here_diner, here_sunday) %>% 
+        select(name, here_diner, here_sunday, special_diet) %>% 
         rename(
-          stats::setNames(c("name", "type", "here_cocktail", "here_diner", "here_sunday"), 
-                          c("Name", "Kategorie", "Angemeldet?", "Aparthotel", "Frühstuck") 
+          stats::setNames(c("name", "here_diner", "here_sunday", "special_diet"), 
+                          c("Name", "Aparthotel", "Frühstuck", "Kommentar") 
           )
         )
       
