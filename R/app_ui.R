@@ -52,11 +52,11 @@ app_ui <- function(request) {
                
                
                
-               # tabPanel(
-               #   title = "Trauzeugen",
-               #   h1(strong(tags$u("Trauzeugen"), style = titleStyle),
-               #   mod_tab_witnesses_ui("tab_witnesses_ui_1")
-               # ),
+               tabPanel(
+                 title = "Trauzeugen",
+                 h1(strong(tags$u("Trauzeugen"), style = titleStyle)),
+                 mod_tab_witnesses_ui("tab_witnesses_ui_1")
+               ),
                
                tabPanel(
                  title = "Sehenswürdigkeiten",
