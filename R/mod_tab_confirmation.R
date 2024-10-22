@@ -20,9 +20,16 @@ mod_tab_confirmation_ui <- function(id){
     
     fluidRow(
       align = "center",
-      tags$br(style = "line-height: 65px"),
+      #tags$br(style = "line-height: 65px"),
       # h1("Confirmer ma venue / notre venue", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:30px; letter-spacing:5px; color: black; text-align: center"),
-      h1("Bitte jede Person einzeln anmelden", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
+      h1("Bitte jede Person einzeln anmelden.", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
+      tags$br(style = "line-height: 40px"),
+      tags$p("Aufgrund von begrenztem Platz in der Kapelle haben wir uns entschieden,", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
+      tags$p("alle Gäste ohne ihre (minderjährigen) Kinder einzuladen.", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
+      tags$br(style = "line-height: 40px"),
+      tags$p("Da wir schon länger 1 bis 2 Haushalte führen,", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
+      tags$p("brauchen wir nichts mehr zum Einstand.", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
+      tags$p("Stattdessen würden uns über Geldgeschenke freuen.", style = "font-family: \'Bauer Bodoni Std 1\'; font-size:15px; letter-spacing:2px; color: black; text-align: center"),
       tags$br(style = "line-height: 40px"),
     ),
     

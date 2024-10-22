@@ -32,11 +32,13 @@ mod_tab_accommodation_ui <- function(id){
         tags$br(style = "line-height: 20px"),
         tags$p("Hinweis zur Buchung", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; color: #4b0082; font-size: 20px; letter-spacing:3px; text-align: center"),
         tags$p("Per Formular buchen &", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; color: #4b0082; font-size: 20px; letter-spacing:3px; text-align: center"),
-        tags$p("bitte bei der Buchung angeben:", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; color: #4b0082; font-size: 20px; letter-spacing:3px; text-align: center"),
+        tags$p("bitte bei der Buchung dies angeben:", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; color: #4b0082; font-size: 20px; letter-spacing:3px; text-align: center"),
         tags$p("'Magnus Halbe und Malena Krüger", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
         tags$p("Hochzeit am 25.04.2025'", style = "font-family: \'MrsEavesItalic\'; letter-spacing:3px; text-align: center"),
         tags$br(style = "line-height: 20px"),
-        tags$p("Durch die Angabe erfolgt eine bessere Zuordnung und es kann wahlweise auch nur eine Nacht gebucht werden. Die Buchung erfolgt bitte persönlich über die Webseite.", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center")
+        tags$p("Durch die Angabe erfolgt eine bessere Zuordnung und es kann wahlweise auch nur eine Nacht gebucht werden. Die Buchung erfolgt bitte persönlich über die Webseite.", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
+        tags$p("Gibt uns bitte im Formular Bescheid, falls ihr im Campotel übernachtet & mit uns frühstücken wollt.:", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; color: #4b0082; font-size: 20px; letter-spacing:3px; text-align: center"),
+        tags$p("Wir müssen dem Campotel mitteilen, wie viele mit uns frühstücken.", style = "font-family: \'MrsEavesItalic\'; font-weight: bold; letter-spacing:3px; text-align: center"),
         ),
       
       tags$br(style = "line-height: 79px"),
